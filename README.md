@@ -9,7 +9,7 @@ Actualmente el repositorio solo incluye 1 demostracion básica:
 
 * Demostración de que
   [
-  1 = 0.999\ldots
+  1 = 0.999...
   ]
 
 Este repositorio irá creciendo con más demostraciones a medida que aprendo y exploro nuevas ideas matemáticas.
