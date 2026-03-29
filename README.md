@@ -68,5 +68,6 @@ GitHub:
 https://github.com/Alvaro-Manzo
 
 ---
-
-✨ Este repositorio es parte de mi proceso de aprendizaje en **matemáticas, fisica y LaTeX**.
+**
+PROYECTO EDUCATIVO
+**
