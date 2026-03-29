@@ -5,11 +5,18 @@ La idea de este proyecto es practicar tanto **matemáticas y mi logica** como **
 
 ##  Contenido
 
-Actualmente el repositorio solo incluye 1 demostracion básica:
+Actualmente el repositorio solo incluye 2 demostraciones básicas:
 
 * Demostración de que
   [
   1 = 0.999...
+  ]
+
+y
+
+* Demostración de:
+  [
+  1 > 0
   ]
 
 Este repositorio irá creciendo con más demostraciones a medida que aprendo y exploro nuevas ideas matemáticas.
@@ -46,7 +53,7 @@ o usando un editor como:
 ```
 DEMOSTRACIONES/
 │
-├─ demostraciones.tex
+├─ main.tex
 └─ README.md
 ```
 
