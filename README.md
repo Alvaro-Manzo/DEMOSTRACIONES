@@ -1,7 +1,7 @@
 #  DEMOSTRACIONES
 
 Repositorio donde guardo mis **primeras demostraciones matemáticas escritas en LaTeX**.
-La idea de este proyecto es practicar tanto **matemáticas** como **tipografía científica con LaTeX**.
+La idea de este proyecto es practicar tanto **matemáticas y mi logica** como **tipografía científica con LaTeX**.
 
 ##  Contenido
 
