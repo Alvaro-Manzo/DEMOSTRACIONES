@@ -10,7 +10,7 @@ La idea de este proyecto es practicar tanto **matemáticas y lógica** como **ti
 Actualmente el repositorio incluye demostraciones básicas como:
 
 * Demostración de que
-  (1 = 0.999\ldots)
+  (1 = 0.999....)
 
 * Demostración de que
   (1 > 0)
