@@ -1,7 +1,6 @@
-\documentclass[12pt]{article}
+\documentclass[12pt]{report}
 
 \usepackage{graphicx}
-\usepackage{titling}
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[spanish]{babel}
@@ -10,88 +9,114 @@
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{siunitx}
 \usepackage{setspace}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsthm}
+\usepackage{hyperref}
 
+\setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 
-\title{DEMOSTRACIONES}
+% ENTORNOS MATEMATICOS
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[chapter]
+\newtheorem{proposition}[theorem]{Proposición}
+\newtheorem{lemma}[theorem]{Lema}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definición}
+
+% DATOS
+
+\title{Demostraciones Matemáticas}
 \author{Álvaro Yamil Manzo Ayora}
 \date{Marzo 2026}
 
 \begin{document}
 
-\maketitle
+% PORTADA
 
-\begin{center}
-\textit{Ciudad de México, México}
-\end{center}
+\begin{titlepage}
 
-\newpage
+\centering
+
+\vspace{3cm}
+
+{\Huge \textbf{Demostraciones Matemáticas}}
+
+\vspace{1.5cm}
+
+{\Large Álvaro Yamil Manzo Ayora}
+
+\vspace{0.5cm}
+
+Ciudad de México, México
+
+\vfill
+
+Marzo 2026
+
+\end{titlepage}
+
 \tableofcontents
 
 \newpage
 
-\section*{Prólogo}
-\addcontentsline{toc}{section}{Prólogo}
+% PROLOGO
+
+\chapter*{Prólogo}
+\addcontentsline{toc}{chapter}{Prólogo}
+
+En este documento (codificado en \LaTeX), creado el 27 de marzo de 2026 por Álvaro Yamil Manzo Ayora, estudiante de bachillerato, evidenciaré mis avances en la lógica matemática.
+
+Aunque las demostraciones presentadas hasta el momento sean bastante básicas y algunas puedan parecer evidentes, considero importante mostrarlas desde el inicio para que, en su debido momento, pueda mirar hacia atrás y recordar lo que fui y lo que soy mediante el progreso reflejado en este archivo.
+
+Igualmente, espero que las personas que no estén familiarizadas con estos temas puedan avanzar en las demostraciones con mayor facilidad y comenzar a desarrollar el pensamiento abstracto.
+
+Actualmente este documento se encuentra en código abierto en mi repositorio de Github:
 
 \begin{center}
-\begin{minipage}{0.82\textwidth}
 
-En este documento (codificado en LaTeX), creado el 27 de marzo de 2026 por Álvaro Yamil Manzo Ayora, 
-estudiante de bachillerato, evidenciaré mis avances en la lógica matemática.
+\url{https://github.com/Alvaro-Manzo/DEMOSTRACIONES}
 
-Aunque las demostraciones presentadas hasta el momento sean bastante básicas 
-y algunas puedan parecer evidentes, considero importante mostrarlas desde el 
-inicio para que, en su debido momento, pueda mirar hacia atrás y recordar lo 
-que fui y lo que soy mediante el progreso reflejado en este archivo.
-
-Igualmente, espero que las personas que no estén familiarizadas con estos 
-temas puedan avanzar en las demostraciones con mayor facilidad y comenzar 
-a desarrollar el pensamiento abstracto.
-
-Actualmente se encuentra en codigo abierto este documento en mi repositorio de Github: 
-
-\vspace{1em}https://github.com/Alvaro-Manzo/DEMOSTRACIONES
-
-\vspace{1em}Donde se encuentra el codigo de este archivo y el codigo de una plantilla de Tesis con los logos de la Universidad Nacional Autónoma de México y de la Facultad de Ciencias, solo por si algún dia la llegara a ocupar o para quien la necesite ahi estará el codigo abierto, gratis para todos.
-
-Espero continuar con este proyecto compartiendo mis pequeños conocimientos y, en 
-algún momento, poder compartirlo con todos, ayudando a las demás generaciones 
-y tratando de hacer la matemática fácil y entendible para todos, incluso para 
-quienes la rechazan por considerarla ``complicada'', ``aburrida'' o ``tediosa''.
-\vspace{1em}
-
-No te desesperes o agobies por no entender algo, todos en algún momento no entendimos nada, hasta los mejores matemáticos, si no llegas a entender algun simbolo u operación puedes copiarla y pegarla directamente en alguna IA y pedirle que te ayude a entenderlo pero siempre trataré de hacerlo lo mas legible sin perder la formalidad matemática.
-
-\vspace{2em}
-
-\begin{center}
-\textbf{Le recomiendo mantener presente la siguiente frase mientras lee este documento:}
 \end{center}
 
-\vspace{1em}
+Donde se encuentra el código de este archivo y el código de una plantilla de tesis con los logos de la Universidad Nacional Autónoma de México y de la Facultad de Ciencias.
+
+Espero continuar contribuyendo a este proyecto compartiendo mis pequeños conocimientos y, en algún momento, poder compartirlo con todos, ayudando a las demás generaciones y tratando de hacer la matemática más accesible para quienes la consideran complicada o aburrida.
+
+No te desesperes si algo no se entiende al principio. Todos, incluso los grandes matemáticos, alguna vez no entendimos nada. Con paciencia y práctica, el pensamiento matemático se vuelve cada vez más claro.
+
+\vspace{1.5em}
 
 \begin{center}
+
+\textbf{Le recomiendo mantener presente la siguiente frase mientras lee este documento:}
+
+\vspace{1em}
+
 \textit{``La belleza de las matemáticas solo se muestra a sus seguidores más pacientes.''}
 
 \textsc{Maryam Mirzakhani}
-\end{center}
 
-\end{minipage}
 \end{center}
 
 \newpage
 
-\section{Demostraciones}
+% CAPITULO
 
-\subsection{Demostración de $1 = 0.999\ldots$}
+\chapter{Demostraciones aritméticas}
 
-Demostrar que:
+\section{Demostración de $1 = 0.999\ldots$}
 
-\[
-1 = 0.999\ldots
-\]
+\begin{proposition}
+El número $1$ es igual al número decimal periódico $0.999\ldots$.
+\end{proposition}
 
-Sabemos que:
+\begin{proof}
+
+Sabemos que
 
 \[
 \frac{1}{3} = 0.333\ldots
@@ -113,23 +138,21 @@ Simplificando la fracción:
 1 = 0.999\ldots
 \]
 
-\[
-\therefore 1 = 0.999\ldots
-\]
+\end{proof}
 
 \newpage
 
-\subsection{Demostración de $1>0$}
+\section{Demostración de $1>0$}
 
-Demostrar que:
+\begin{proposition}
+El número $1$ es mayor que $0$.
+\end{proposition}
 
-\[
-1 > 0
-\]
+\begin{proof}
 
-Para esta demostración utilizaremos el método de contradicción.
+Utilizaremos un argumento por contradicción.
 
-Existen tres posibilidades para comparar $1$ y $0$:
+Existen tres posibilidades al comparar $1$ y $0$:
 
 \[
 1 = 0, \qquad 1 < 0, \qquad 1 > 0
@@ -181,18 +204,92 @@ Restamos $1$ en ambos lados:
 1-1 < 0-1
 \]
 
-Simplificando:
-
 \[
 0 < -1
 \]
 
-Lo cual es falso.
+Esto es falso.
 
-Por lo tanto, las dos primeras posibilidades son falsas y concluimos que:
+Por lo tanto, las dos primeras posibilidades son falsas y concluimos que
 
 \[
-\therefore 1 > 0
+1 > 0
 \]
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de $0\cdot a = 0$}
+
+\begin{proposition}
+Para cualquier número $a$ se cumple que
+\[
+0\cdot a = 0.
+\]
+\end{proposition}
+
+\begin{proof}
+
+Sabemos que
+
+\[
+0 = 0+0
+\]
+
+Multiplicamos ambos lados por $a$:
+
+\[
+a\cdot0 = a(0+0)
+\]
+
+Aplicamos la propiedad distributiva:
+
+\[
+a(0+0) = a\cdot0 + a\cdot0
+\]
+
+Entonces
+
+\[
+a\cdot0 = a\cdot0 + a\cdot0
+\]
+
+Restamos $a\cdot0$ en ambos lados:
+
+\[
+a\cdot0 - a\cdot0 = a\cdot0 + a\cdot0 - a\cdot0
+\]
+
+Simplificando:
+
+\[
+0 = a\cdot0
+\]
+
+\end{proof}
+
+\newpage
+
+% LICENCIA
+
+\chapter*{Licencia}
+\addcontentsline{toc}{chapter}{Licencia}
+
+© 2026 Álvaro Yamil Manzo Ayora
+
+Este documento está bajo la licencia
+
+\textit{Creative Commons Attribution 4.0 International (CC BY 4.0)}.
+
+Usted es libre de compartir y adaptar este material siempre que se otorgue el crédito correspondiente al autor.
+
+Para ver una copia de esta licencia visite:
+
+\begin{center}
+
+\url{https://creativecommons.org/licenses/by/4.0/}
+
+\end{center}
 
 \end{document}
