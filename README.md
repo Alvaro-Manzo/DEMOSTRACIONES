@@ -1,54 +1,63 @@
-#  DEMOSTRACIONES
+# DEMOSTRACIONES
 
-Repositorio donde guardo mis **primeras demostraciones matemáticas escritas en LaTeX**.
-La idea de este proyecto es practicar tanto **matemáticas y mi logica** como **tipografía científica con LaTeX**.
+Repositorio donde guardo mis primeras demostraciones matemáticas escritas en **LaTeX**.
+La idea de este proyecto es practicar tanto **matemáticas y lógica** como **tipografía científica utilizando LaTeX**.
 
-##  Contenido
+---
 
-Actualmente el repositorio solo incluye 2 demostraciones básicas:
+## Contenido
+
+Actualmente el repositorio incluye demostraciones básicas como:
 
 * Demostración de que
-  [
-  1 = 0.999...
-  ]
+  (1 = 0.999\ldots)
 
-y
+* Demostración de que
+  (1 > 0)
 
-* Demostración de:
-  [
-  1 > 0
-  ]
+* Demostración de que
+  (0\cdot a = 0)
 
-Este repositorio irá creciendo con más demostraciones a medida que aprendo y exploro nuevas ideas matemáticas.
+Este repositorio irá creciendo con más demostraciones a medida que continúe aprendiendo y explorando nuevas ideas matemáticas.
+
+---
 
 ## Objetivo del proyecto
 
+Los principales objetivos de este proyecto son:
+
 * Practicar **LaTeX para escribir matemáticas**
 * Documentar **demostraciones matemáticas interesantes**
-* Crear una pequeña **colección personal de demostraciones**
-* Aprender a usar **GitHub para proyectos académicos**
+* Crear una **colección personal de demostraciones**
+* Aprender a utilizar **Git y GitHub para proyectos académicos**
 
-##  Tecnologías utilizadas
+---
 
-* **LaTeX**
-* **Git**
-* **GitHub**
+## Tecnologías utilizadas
 
-##  Cómo compilar el documento
+* LaTeX
+* Git
+* GitHub
+
+---
+
+## Cómo compilar el documento
 
 Si tienes LaTeX instalado puedes compilar el documento con:
 
-```bash
-pdflatex demostraciones.tex
+```
+pdflatex main.tex
 ```
 
-o usando un editor como:
+También puedes utilizar editores como:
 
 * Overleaf
 * TeXstudio
-* VSCode + LaTeX Workshop
+* Visual Studio Code + LaTeX Workshop
 
-##  Estructura del proyecto
+---
+
+## Estructura del proyecto
 
 ```
 DEMOSTRACIONES/
@@ -57,20 +66,40 @@ DEMOSTRACIONES/
 └─ README.md
 ```
 
-##  Planes futuros
-Espero que con el paso del tiempo aprender mas sobre logica matematica y LaTeX, y hacer mas y mejores demostraciones.
+---
 
-##  Autor
+## Planes futuros
 
-**Alvaro Manzo**
+Con el paso del tiempo espero ampliar este documento con más demostraciones y mejorar tanto el contenido matemático como la presentación tipográfica.
+
+También me interesa seguir aprendiendo sobre:
+
+* lógica matemática
+* teoría de números
+* escritura matemática en LaTeX
+
+---
+
+## Autor
+
+Álvaro Manzo
 
 GitHub:
 https://github.com/Alvaro-Manzo
 
-# APORTACIONES
-Toda aportacion es buena, si decides apoyarme de la manera que sea te lo agredeceria mucho, sigue las reglas de la LICENSE
+---
+
+## Aportaciones
+
+Las contribuciones son bienvenidas.
+Si deseas proponer mejoras, corregir errores o sugerir nuevas demostraciones, puedes abrir un **issue** o enviar un **pull request** siguiendo las condiciones de la licencia del proyecto.
 
 ---
-**
+
+## Licencia
+
+Este proyecto es de carácter educativo y se distribuye bajo los términos especificados en el archivo **LICENSE** del repositorio.
+
+---
+
 PROYECTO EDUCATIVO
-**
