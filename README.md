@@ -16,7 +16,7 @@ Actualmente el repositorio incluye demostraciones básicas como:
   (1 > 0)
 
 * Demostración de que
-  (0\cdot a = 0)
+  (0 * a = 0)
 
 Este repositorio irá creciendo con más demostraciones a medida que continúe aprendiendo y explorando nuevas ideas matemáticas.
 
