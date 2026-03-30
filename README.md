@@ -67,6 +67,9 @@ Espero que con el paso del tiempo aprender mas sobre logica matematica y LaTeX, 
 GitHub:
 https://github.com/Alvaro-Manzo
 
+# APORTACIONES
+Toda aportacion es buena, si decides apoyarme de la manera que sea te lo agredeceria mucho, sigue las reglas de la LICENSE
+
 ---
 **
 PROYECTO EDUCATIVO
