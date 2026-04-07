@@ -1,3 +1,25 @@
+# DEMOSTRACIONES
+
+Repositorio donde guardo algunas demostraciones matemáticas escritas en **LaTeX**.
+
+La idea de este proyecto es practicar tanto **matemáticas y lógica** como **escritura matemática utilizando LaTeX**.
+
+---
+
+## Contenido
+
+Actualmente el documento incluye demostraciones básicas como:
+
+- Demostración de que \(1 = 0.999\ldots\)
+- Demostración de que \(1 > 0\)
+- Demostración de que \(0 \cdot a = 0\)
+
+Con el tiempo el documento irá creciendo con más demostraciones.
+
+---
+
+## Objetivo del proyecto
+
 Los objetivos principales de este proyecto son:
 
 - Practicar **LaTeX para escribir matemáticas**
@@ -23,7 +45,7 @@ Si tienes LaTeX instalado puedes compilar el documento con:
 pdflatex main.tex
 
 
-También puedes utilizar editores como:
+También puedes usar editores como:
 
 - Overleaf
 - TeXstudio
@@ -38,7 +60,6 @@ DEMOSTRACIONES/
 │
 ├─ main.tex
 ├─ main.pdf
-├─ LICENSE
 └─ README.md
 
 
