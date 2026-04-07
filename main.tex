@@ -1,6 +1,11 @@
-\documentclass[12pt]{report}
+\documentclass[12pt,final]{report}
+
+% ================= PAQUETES =================
 
 \usepackage{graphicx}
+\setkeys{Gin}{draft=false}
+\graphicspath{{./}}
+
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage[spanish]{babel}
@@ -17,7 +22,7 @@
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 
-% ENTORNOS MATEMATICOS
+% ================= ENTORNOS MATEMATICOS =================
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Teorema}[chapter]
@@ -27,7 +32,7 @@
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definición}
 
-% DATOS
+% ================= DATOS =================
 
 \title{Demostraciones Matemáticas}
 \author{Álvaro Yamil Manzo Ayora}
@@ -41,9 +46,10 @@
 \begin{center}
 
 % LOGOS
-\includegraphics[width=3.5cm]{logo_unam.png}
+
+\includegraphics[width=3.5cm]{logo_unam_negro.png}
 \hspace{1.5cm}
-\includegraphics[width=3.5cm]{Logo P860_0.jpeg}
+\includegraphics[width=3.5cm]{logo_enp8.jpeg}
 
 \vspace{1cm}
 
@@ -65,14 +71,11 @@
 \rule{\textwidth}{0.6pt}
 \vspace{0.5cm}
 
-
 \vspace{2cm}
 
-\begin{center}
 \large
-\textbf{Autor:} Álvaro Yamil Manzo Ayora \\
-\vspace{0.3cm}
-\end{center}
+\textbf{Autor:} Álvaro Yamil Manzo Ayora
+
 \vfill
 
 {\large Ciudad de México, México}
@@ -88,7 +91,7 @@
 
 \newpage
 
-% PROLOGO
+% ================= PROLOGO =================
 
 \chapter*{Prólogo}
 \addcontentsline{toc}{chapter}{Prólogo}
@@ -129,7 +132,7 @@ No te desesperes si algo no se entiende al principio. Todos, incluso los grandes
 
 \newpage
 
-% CAPITULO
+% ================= CAPITULO =================
 
 \chapter{Demostraciones aritméticas}
 
@@ -296,7 +299,71 @@ Simplificando:
 
 \newpage
 
-% LICENCIA
+\section{Demostración de que $\sqrt{2}$ es irracional}
+
+\begin{proposition}
+El número $\sqrt{2}$ es irracional.
+\end{proposition}
+
+\begin{proof}
+
+Procedemos por contradicción.
+
+Supongamos que $\sqrt{2}$ es racional.
+
+Entonces puede escribirse como
+
+\[
+\sqrt{2} = \frac{a}{b}
+\]
+
+donde $a$ y $b$ son enteros sin factores comunes.
+
+Elevando al cuadrado:
+
+\[
+2 = \frac{a^2}{b^2}
+\]
+
+Multiplicando por $b^2$:
+
+\[
+2b^2 = a^2
+\]
+
+Esto implica que $a^2$ es par, por lo tanto $a$ es par.
+
+Entonces existe un entero $k$ tal que
+
+\[
+a = 2k
+\]
+
+Sustituyendo:
+
+\[
+2b^2 = 4k^2
+\]
+
+\[
+b^2 = 2k^2
+\]
+
+Esto implica que $b$ también es par.
+
+Pero entonces $a$ y $b$ son ambos pares, lo cual contradice que la fracción fuera irreducible.
+
+Por lo tanto
+
+\[
+\sqrt{2} \text{ es irracional}
+\]
+
+\end{proof}
+
+\newpage
+
+% ================= LICENCIA =================
 
 \chapter*{Licencia}
 \addcontentsline{toc}{chapter}{Licencia}
