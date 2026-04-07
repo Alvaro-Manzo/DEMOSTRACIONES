@@ -1,46 +1,4 @@
-# DEMOSTRACIONES
 
-Repositorio donde guardo algunas demostraciones matemáticas escritas en **LaTeX**.
-
-La idea de este proyecto es practicar tanto **matemáticas y lógica** como **escritura matemática utilizando LaTeX**.
-
----
-
-## Contenido
-
-Actualmente el documento incluye demostraciones como:
-
-- Demostración de que \(1 = 0.999\ldots\)
-- Demostración de que \(1 > 0\)
-- Demostración de que \(0 \cdot a = 0\)
-- Demostración de que \(\sqrt{2}\) es irracional
-
-Con el tiempo el documento irá creciendo con más demostraciones.
-
----
-
-## Objetivo del proyecto
-
-Los objetivos principales de este proyecto son:
-
-- Practicar **LaTeX para escribir matemáticas**
-- Documentar **demostraciones matemáticas**
-- Crear una **colección personal de demostraciones**
-- Aprender a utilizar **Git y GitHub en proyectos académicos**
-
----
-
-## Tecnologías utilizadas
-
-- LaTeX  
-- Git  
-- GitHub  
-
----
-
-## Cómo compilar el documento
-
-Si tienes LaTeX instalado puedes compilar el documento con:
 # DEMOSTRACIONES
 
 Repositorio donde guardo algunas demostraciones matemáticas escritas en **LaTeX**.
