@@ -362,6 +362,634 @@ Por lo tanto
 \end{proof}
 
 \newpage
+\section{Demostración de que la suma de dos números pares es par}
+
+\begin{proposition}
+La suma de dos números pares es par.
+\end{proposition}
+
+\begin{proof}
+
+Sea $a$ y $b$ dos números pares. Por definición, existen enteros $k$ y $m$ tales que:
+
+\[
+a = 2k, \quad b = 2m
+\]
+
+Entonces:
+
+\[
+a + b = 2k + 2m
+\]
+
+Agrupamos:
+
+\[
+a + b = 2(k + m)
+\]
+
+Sabemos que la suma de dos enteros es un entero, es decir, $k + m \in \mathbb{Z}$.
+
+Por lo tanto, $a+b$ es múltiplo de 2.
+
+Esto implica que:
+
+\[
+a + b \text{ es par}
+\]
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que la suma de dos números impares es par}
+
+\begin{proposition}
+La suma de dos números impares es par.
+\end{proposition}
+
+\begin{proof}
+
+Sean $a$ y $b$ números impares. Entonces:
+
+\[
+a = 2k + 1, \quad b = 2m + 1
+\]
+
+Sumamos:
+
+\[
+a + b = (2k + 1) + (2m + 1)
+\]
+
+\[
+a + b = 2k + 2m + 2
+\]
+
+Factorizamos:
+
+\[
+a + b = 2(k + m + 1)
+\]
+
+Como $k+m+1$ es un entero, el resultado es múltiplo de 2.
+
+Por lo tanto, la suma es par.
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que el cuadrado de un número impar es impar}
+
+\begin{proposition}
+El cuadrado de un número impar es impar.
+\end{proposition}
+
+\begin{proof}
+
+Sea $n$ impar. Entonces:
+
+\[
+n = 2k + 1
+\]
+
+Elevamos al cuadrado:
+
+\[
+n^2 = (2k + 1)^2
+\]
+
+Desarrollamos:
+
+\[
+n^2 = 4k^2 + 4k + 1
+\]
+
+Factorizamos:
+
+\[
+n^2 = 2(2k^2 + 2k) + 1
+\]
+
+Observamos que $2k^2 + 2k$ es entero.
+
+Por lo tanto:
+
+\[
+n^2 = 2m + 1
+\]
+
+Esto prueba que $n^2$ es impar.
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que si $ab=0$, entonces $a=0$ o $b=0$}
+
+\begin{proposition}
+Si el producto de dos números es cero, entonces uno de ellos es cero.
+\end{proposition}
+
+\begin{proof}
+
+Sea $ab=0$.
+
+Supongamos que $a \neq 0$. Entonces podemos dividir entre $a$:
+
+\[
+\frac{ab}{a} = \frac{0}{a}
+\]
+
+\[
+b = 0
+\]
+
+Esto demuestra que si $a$ no es cero, entonces $b$ debe ser cero.
+
+Análogamente, si $b \neq 0$, entonces $a = 0$.
+
+Por lo tanto:
+
+\[
+a=0 \quad \text{o} \quad b=0
+\]
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de la suma de los primeros $n$ números naturales}
+
+\begin{proposition}
+\[
+1+2+3+\cdots+n = \frac{n(n+1)}{2}
+\]
+\end{proposition}
+
+\begin{proof}
+
+Usaremos inducción matemática.
+
+\textbf{Caso base:}
+
+Para $n=1$:
+
+\[
+1 = \frac{1(1+1)}{2} = 1
+\]
+
+Se cumple.
+
+\textbf{Paso inductivo:}
+
+Supongamos que:
+
+\[
+1+2+\cdots+n = \frac{n(n+1)}{2}
+\]
+
+Entonces:
+
+\[
+1+2+\cdots+n+(n+1)
+\]
+
+Sustituimos:
+
+\[
+= \frac{n(n+1)}{2} + (n+1)
+\]
+
+Factorizamos:
+
+\[
+= \frac{(n+1)(n+2)}{2}
+\]
+
+Por lo tanto, la fórmula se cumple para $n+1$.
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que no existe el mayor número natural}
+
+\begin{proposition}
+No existe un número natural máximo.
+\end{proposition}
+
+\begin{proof}
+
+Supongamos que existe un número natural máximo $N$.
+
+Entonces ningún número natural puede ser mayor que $N$.
+
+Pero consideremos el número:
+
+\[
+N+1
+\]
+
+Claramente:
+
+\[
+N+1 > N
+\]
+
+Esto contradice la hipótesis de que $N$ es el mayor número natural.
+
+Por lo tanto, no existe tal número.
+
+\end{proof}
+
+\newpage
+
+% ================= DEMOSTRACIONES ADICIONALES =================
+
+\section{Demostración de que $\sqrt{3}$ es irracional}
+
+\begin{proposition}
+El número $\sqrt{3}$ es irracional.
+\end{proposition}
+
+\begin{proof}
+
+Procedemos por contradicción.
+
+Supongamos que $\sqrt{3}$ es racional. Entonces existen enteros $a$ y $b$ sin factores comunes tales que:
+
+\[
+\sqrt{3} = \frac{a}{b}
+\]
+
+Elevamos al cuadrado ambos lados:
+
+\[
+3 = \frac{a^2}{b^2}
+\]
+
+Multiplicamos por $b^2$:
+
+\[
+3b^2 = a^2
+\]
+
+Esto implica que $a^2$ es múltiplo de $3$. Por lo tanto, $a$ es múltiplo de $3$ (si un número no es múltiplo de $3$, su cuadrado deja residuo $1$ al dividirse entre $3$). Entonces existe $k \in \mathbb{Z}$ tal que:
+
+\[
+a = 3k
+\]
+
+Sustituimos en la ecuación $3b^2 = a^2$:
+
+\[
+3b^2 = (3k)^2 = 9k^2
+\]
+
+Dividimos entre $3$:
+
+\[
+b^2 = 3k^2
+\]
+
+Esto implica que $b^2$ es múltiplo de $3$, y por lo tanto $b$ también es múltiplo de $3$.
+
+Hemos llegado a una contradicción, pues $a$ y $b$ son ambos múltiplos de $3$, lo que contradice la hipótesis de que la fracción $\frac{a}{b}$ es irreducible.
+
+Por lo tanto, $\sqrt{3}$ es irracional.
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que el producto de dos números impares es impar}
+
+\begin{proposition}
+El producto de dos números impares es impar.
+\end{proposition}
+
+\begin{proof}
+
+Sean $a$ y $b$ números impares. Por definición, existen enteros $k$ y $m$ tales que:
+
+\[
+a = 2k + 1, \qquad b = 2m + 1
+\]
+
+Calculamos su producto:
+
+\[
+a \cdot b = (2k + 1)(2m + 1)
+\]
+
+Desarrollamos usando la propiedad distributiva:
+
+\[
+a \cdot b = 4km + 2k + 2m + 1
+\]
+
+Factorizamos $2$ de los primeros tres términos:
+
+\[
+a \cdot b = 2(2km + k + m) + 1
+\]
+
+Sea $p = 2km + k + m$. Como $k$ y $m$ son enteros, $p$ es un entero. Entonces:
+
+\[
+a \cdot b = 2p + 1
+\]
+
+Esto es precisamente la forma de un número impar. Por lo tanto, el producto de dos números impares es impar.
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que $(-a)(-b) = ab$}
+
+\begin{proposition}
+Para cualquier par de números reales $a$ y $b$, se cumple que:
+\[
+(-a)(-b) = ab
+\]
+\end{proposition}
+
+\begin{proof}
+
+Comenzamos con la expresión $(-a)(-b)$.
+
+Sumamos y restamos $ab$ dentro de la expresión de manera inteligente. Primero, usamos la propiedad distributiva y el hecho de que $(-a) = (-1) \cdot a$ y $(-b) = (-1) \cdot b$:
+
+\[
+(-a)(-b) = [(-1) \cdot a] \cdot [(-1) \cdot b]
+\]
+
+Por la propiedad asociativa y conmutativa del producto:
+
+\[
+(-a)(-b) = (-1) \cdot (-1) \cdot a \cdot b
+\]
+
+Ahora demostramos que $(-1)(-1) = 1$. Sabemos que:
+
+\[
+0 = 0 \cdot (-1) = (1 + (-1)) \cdot (-1) = 1 \cdot (-1) + (-1) \cdot (-1) = -1 + (-1)(-1)
+\]
+
+Sumamos $1$ a ambos lados de la igualdad $-1 + (-1)(-1) = 0$:
+
+\[
+(-1)(-1) = 1
+\]
+
+Por lo tanto:
+
+\[
+(-a)(-b) = 1 \cdot a \cdot b = ab
+\]
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de la desigualdad de las medias (AM-GM) para dos números}
+
+\begin{proposition}
+Para cualesquiera números reales no negativos $x$ e $y$, se cumple que:
+\[
+\frac{x+y}{2} \geq \sqrt{xy}
+\]
+con igualdad si y solo si $x = y$.
+\end{proposition}
+
+\begin{proof}
+
+Observamos que para cualquier número real, su cuadrado es no negativo. En particular:
+
+\[
+(\sqrt{x} - \sqrt{y})^2 \geq 0
+\]
+
+Desarrollamos el cuadrado:
+
+\[
+(\sqrt{x})^2 - 2\sqrt{x}\sqrt{y} + (\sqrt{y})^2 \geq 0
+\]
+
+\[
+x - 2\sqrt{xy} + y \geq 0
+\]
+
+Sumamos $2\sqrt{xy}$ a ambos lados:
+
+\[
+x + y \geq 2\sqrt{xy}
+\]
+
+Dividimos entre $2$:
+
+\[
+\frac{x+y}{2} \geq \sqrt{xy}
+\]
+
+La igualdad se da cuando $(\sqrt{x} - \sqrt{y})^2 = 0$, lo que ocurre si y solo si $\sqrt{x} = \sqrt{y}$, es decir, $x = y$.
+
+\end{proof}
+
+\newpage
+
+\section{Demostración del teorema del binomio para exponente $2$}
+
+\begin{proposition}
+Para cualesquiera números reales $a$ y $b$, se cumple que:
+\[
+(a+b)^2 = a^2 + 2ab + b^2
+\]
+\end{proposition}
+
+\begin{proof}
+
+Por definición de potencia:
+
+\[
+(a+b)^2 = (a+b)(a+b)
+\]
+
+Aplicamos la propiedad distributiva (multiplicamos cada término del primer factor por cada término del segundo factor):
+
+\[
+(a+b)(a+b) = a \cdot a + a \cdot b + b \cdot a + b \cdot b
+\]
+
+Simplificamos usando la conmutatividad del producto ($a \cdot b = b \cdot a$):
+
+\[
+(a+b)^2 = a^2 + ab + ab + b^2
+\]
+
+Sumamos los términos semejantes:
+
+\[
+(a+b)^2 = a^2 + 2ab + b^2
+\]
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que $\sqrt{ab} \leq \frac{a+b}{2}$ (equivalente a AM-GM)}
+
+\begin{proposition}
+Para $a, b \geq 0$:
+\[
+\sqrt{ab} \leq \frac{a+b}{2}
+\]
+\end{proposition}
+
+\begin{proof}
+
+Esta proposición es equivalente a la desigualdad AM-GM ya demostrada, pero presentamos una demostración alternativa directa.
+
+Observamos que:
+
+\[
+\frac{a+b}{2} - \sqrt{ab} = \frac{a+b - 2\sqrt{ab}}{2} = \frac{(\sqrt{a})^2 - 2\sqrt{a}\sqrt{b} + (\sqrt{b})^2}{2}
+\]
+
+Reconocemos el numerador como un binomio al cuadrado:
+
+\[
+\frac{a+b}{2} - \sqrt{ab} = \frac{(\sqrt{a} - \sqrt{b})^2}{2}
+\]
+
+Como el cuadrado de cualquier número real es mayor o igual que cero:
+
+\[
+(\sqrt{a} - \sqrt{b})^2 \geq 0
+\]
+
+Por lo tanto:
+
+\[
+\frac{a+b}{2} - \sqrt{ab} \geq 0
+\]
+
+Sumamos $\sqrt{ab}$ a ambos lados:
+
+\[
+\frac{a+b}{2} \geq \sqrt{ab}
+\]
+
+La igualdad ocurre cuando $\sqrt{a} - \sqrt{b} = 0$, es decir, $a = b$.
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que $n^2 \geq n$ para todo entero $n \geq 1$}
+
+\begin{proposition}
+Para todo número entero $n \geq 1$, se cumple que:
+\[
+n^2 \geq n
+\]
+\end{proposition}
+
+\begin{proof}
+
+Demostramos por inducción sobre $n$.
+
+\textbf{Caso base:} Para $n = 1$:
+\[
+1^2 = 1 \geq 1
+\]
+Se cumple la igualdad.
+
+\textbf{Paso inductivo:} Supongamos que para algún $k \geq 1$ se cumple $k^2 \geq k$. Demostremos que $(k+1)^2 \geq k+1$.
+
+Desarrollamos $(k+1)^2$:
+
+\[
+(k+1)^2 = k^2 + 2k + 1
+\]
+
+Por hipótesis de inducción, $k^2 \geq k$, entonces:
+
+\[
+k^2 + 2k + 1 \geq k + 2k + 1 = 3k + 1
+\]
+
+Como $k \geq 1$, tenemos $3k + 1 \geq k + 1$ (ya que $3k + 1 - (k+1) = 2k \geq 0$). Por lo tanto:
+
+\[
+(k+1)^2 \geq k + 1
+\]
+
+Esto completa el paso inductivo.
+
+Por el principio de inducción matemática, la proposición es válida para todo $n \geq 1$.
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que $2^n > n$ para todo $n \in \mathbb{N}$}
+
+\begin{proposition}
+Para todo número natural $n$, se cumple que:
+\[
+2^n > n
+\]
+\end{proposition}
+
+\begin{proof}
+
+Procedemos por inducción matemática.
+
+\textbf{Caso base:} Para $n = 1$:
+\[
+2^1 = 2 > 1
+\]
+Se cumple la desigualdad.
+
+\textbf{Paso inductivo:} Supongamos que para algún $k \geq 1$ se cumple $2^k > k$. Demostremos que $2^{k+1} > k+1$.
+
+Observamos que:
+
+\[
+2^{k+1} = 2 \cdot 2^k
+\]
+
+Por hipótesis de inducción, $2^k > k$, entonces:
+
+\[
+2 \cdot 2^k > 2k
+\]
+
+Ahora necesitamos demostrar que $2k \geq k+1$ para $k \geq 1$:
+\[
+2k - (k+1) = k - 1 \geq 0 \quad \text{para todo } k \geq 1
+\]
+Por lo tanto, $2k \geq k+1$.
+
+Entonces:
+
+\[
+2^{k+1} > 2k \geq k+1
+\]
+
+Por lo tanto, $2^{k+1} > k+1$, lo que completa el paso inductivo.
+
+Así, la desigualdad se cumple para todo $n \in \mathbb{N}$.
+
+\end{proof}
+
+\newpage
+
+\chapter{Demostraciones algebraicas}
 
 % ================= LICENCIA =================
 
@@ -379,9 +1007,7 @@ Usted es libre de compartir y adaptar este material siempre que se otorgue el cr
 Para ver una copia de esta licencia visite:
 
 \begin{center}
-
 \url{https://creativecommons.org/licenses/by/4.0/}
-
 \end{center}
 
 \end{document}
