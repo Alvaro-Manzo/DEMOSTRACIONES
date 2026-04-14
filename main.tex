@@ -1,10 +1,11 @@
 \documentclass[12pt,final]{report}
 
-% ================= PAQUETES =================
+% PAQUETES 
 
 \usepackage{graphicx}
 \setkeys{Gin}{draft=false}
 \graphicspath{{./}}
+
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -18,11 +19,13 @@
 \usepackage{microtype}
 \usepackage{amsthm}
 \usepackage{hyperref}
+\usepackage{fancyhdr}
+
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
 
-% ================= ENTORNOS MATEMATICOS =================
+% ENTORNOS MATEMATICOS
 
 \theoremstyle{plain}
 \newtheorem{theorem}{Teorema}[chapter]
@@ -32,7 +35,7 @@
 \theoremstyle{definition}
 \newtheorem{definition}[theorem]{Definición}
 
-% ================= DATOS =================
+% DATOS 
 
 \title{Demostraciones Matemáticas}
 \author{Álvaro Yamil Manzo Ayora}
@@ -40,7 +43,8 @@
 
 \begin{document}
 
-% ================= PORTADA =================
+% PORTADA 
+
 
 \begin{titlepage}
 \begin{center}
@@ -89,9 +93,10 @@
 
 \tableofcontents
 
+
 \newpage
 
-% ================= PROLOGO =================
+% PROLOGO 
 
 \chapter*{Prólogo}
 \addcontentsline{toc}{chapter}{Prólogo}
@@ -132,7 +137,7 @@ No te desesperes si algo no se entiende al principio. Todos, incluso los grandes
 
 \newpage
 
-% ================= CAPITULO =================
+% CAPITULO 1
 
 \chapter{Demostraciones aritméticas}
 
@@ -606,7 +611,6 @@ Por lo tanto, no existe tal número.
 
 \newpage
 
-% ================= DEMOSTRACIONES ADICIONALES =================
 
 \section{Demostración de que $\sqrt{3}$ es irracional}
 
@@ -1120,7 +1124,7 @@ a^2 - b^2 = (a-b)(a+b)
 
 \end{proof}
 
-% ================= LICENCIA =================
+% LICENCIA 
 
 \chapter*{Licencia}
 \addcontentsline{toc}{chapter}{Licencia}
