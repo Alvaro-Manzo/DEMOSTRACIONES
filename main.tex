@@ -11,11 +11,11 @@
 \usepackage{amssymb}
 \usepackage[spanish]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage[T1]{fontenc}
 \usepackage[margin=2.5cm]{geometry}
 \usepackage{siunitx}
 \usepackage{setspace}
-\usepackage{lmodern}
 \usepackage{microtype}
 \usepackage{amsthm}
 \usepackage{hyperref}
@@ -988,6 +988,53 @@ Entonces:
 Por lo tanto, $2^{k+1} > k+1$, lo que completa el paso inductivo.
 
 Así, la desigualdad se cumple para todo $n \in \mathbb{N}$.
+
+\end{proof}
+
+\newpage
+
+\section{Demostración de que existen infinitos números primos}
+
+\begin{proposition}
+Existen infinitos números primos.
+\end{proposition}
+
+\begin{proof}
+
+Procedemos por contradicción.
+
+Supongamos que solo existen finitos números primos:
+\[
+p_1, p_2, p_3, \dots, p_n
+\]
+
+Construimos el siguiente número:
+\[
+N = p_1 p_2 p_3 \cdots p_n + 1
+\]
+
+Este número $N$ es mayor que todos los primos de la lista.
+
+Ahora analizamos si $N$ es primo o compuesto.
+
+\textbf{Caso 1:} Si $N$ es primo, entonces no está en la lista, lo cual contradice que ya teníamos todos los primos.
+
+\textbf{Caso 2:} Si $N$ es compuesto, entonces debe tener un divisor primo.
+
+Pero ningún primo $p_i$ divide a $N$, porque:
+\[
+N \equiv 1 \pmod{p_i}
+\]
+
+Esto significa que al dividir $N$ entre cualquier $p_i$, el residuo es $1$.
+
+Por lo tanto, $N$ tiene un divisor primo que no está en la lista.
+
+En ambos casos obtenemos una contradicción.
+
+\[
+\therefore \text{existen infinitos números primos}
+\]
 
 \end{proof}
 
