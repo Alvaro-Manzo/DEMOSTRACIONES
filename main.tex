@@ -20,10 +20,23 @@
 \usepackage{amsthm}
 \usepackage{hyperref}
 \usepackage{fancyhdr}
+\usepackage{tocloft}
 
+
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftbeforesecskip}{6pt}
+\renewcommand{\contentsname}{\Huge \textbf{Índice}}
+\renewcommand{\cftchapfont}{\bfseries}
+\renewcommand{\cftsecfont}{}
+\renewcommand{\cftchappagefont}{\bfseries}
+
+\setlength{\cftbeforechapskip}{10pt}
+\setlength{\cftbeforesecskip}{4pt}
 
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{6pt}
+
+
 
 % ENTORNOS MATEMATICOS
 
@@ -91,7 +104,12 @@
 \end{center}
 \end{titlepage}
 
+\begin{center}
+\setcounter{tocdepth}{1}
 \tableofcontents
+\vspace{1cm}
+\end{center}
+
 
 
 \newpage
@@ -141,7 +159,9 @@ No te desesperes si algo no se entiende al principio. Todos, incluso los grandes
 
 \chapter{Demostraciones aritméticas}
 
-\section{Demostración de $1 = 0.999\ldots$}
+\section{Propiedades Basicas}
+
+\subsection{Demostración de $1 = 0.999\ldots$}
 
 \begin{proposition}
 El número $1$ es igual al número decimal periódico $0.999\ldots$.
@@ -175,7 +195,7 @@ Simplificando la fracción:
 
 \newpage
 
-\section{Demostración de $1>0$}
+\subsection{Demostración de $1>0$}
 
 \begin{proposition}
 El número $1$ es mayor que $0$.
@@ -253,7 +273,7 @@ Por lo tanto, las dos primeras posibilidades son falsas y concluimos que
 
 \newpage
 
-\section{Demostración de $0\cdot a = 0$}
+\subsection{Demostración de $0\cdot a = 0$}
 
 \begin{proposition}
 Para cualquier número $a$ se cumple que
@@ -304,7 +324,7 @@ Simplificando:
 
 \newpage
 
-\section{Demostración de que $\sqrt{2}$ es irracional}
+\subsection{Demostración de que $\sqrt{2}$ es irracional}
 
 \begin{proposition}
 El número $\sqrt{2}$ es irracional.
@@ -367,7 +387,7 @@ Por lo tanto
 \end{proof}
 
 \newpage
-\section{Demostración de que la suma de dos números pares es par}
+\subsection{Demostración de que la suma de dos números pares es par}
 
 \begin{proposition}
 La suma de dos números pares es par.
@@ -407,7 +427,7 @@ a + b \text{ es par}
 
 \newpage
 
-\section{Demostración de que la suma de dos números impares es par}
+\subsection{Demostración de que la suma de dos números impares es par}
 
 \begin{proposition}
 La suma de dos números impares es par.
@@ -445,7 +465,7 @@ Por lo tanto, la suma es par.
 
 \newpage
 
-\section{Demostración de que el cuadrado de un número impar es impar}
+\subsection{Demostración de que el cuadrado de un número impar es impar}
 
 \begin{proposition}
 El cuadrado de un número impar es impar.
@@ -491,7 +511,7 @@ Esto prueba que $n^2$ es impar.
 
 \newpage
 
-\section{Demostración de que si $ab=0$, entonces $a=0$ o $b=0$}
+\subsection{Demostración de que si $ab=0$, entonces $a=0$ o $b=0$}
 
 \begin{proposition}
 Si el producto de dos números es cero, entonces uno de ellos es cero.
@@ -525,7 +545,7 @@ a=0 \quad \text{o} \quad b=0
 
 \newpage
 
-\section{Demostración de la suma de los primeros $n$ números naturales}
+\subsection{Demostración de la suma de los primeros $n$ números naturales}
 
 \begin{proposition}
 \[
@@ -579,7 +599,7 @@ Por lo tanto, la fórmula se cumple para $n+1$.
 
 \newpage
 
-\section{Demostración de que no existe el mayor número natural}
+\subsection{Demostración de que no existe el mayor número natural}
 
 \begin{proposition}
 No existe un número natural máximo.
@@ -612,7 +632,7 @@ Por lo tanto, no existe tal número.
 \newpage
 
 
-\section{Demostración de que $\sqrt{3}$ es irracional}
+\subsection{Demostración de que $\sqrt{3}$ es irracional}
 
 \begin{proposition}
 El número $\sqrt{3}$ es irracional.
@@ -668,7 +688,7 @@ Por lo tanto, $\sqrt{3}$ es irracional.
 
 \newpage
 
-\section{Demostración de que el producto de dos números impares es impar}
+\subsection{Demostración de que el producto de dos números impares es impar}
 
 \begin{proposition}
 El producto de dos números impares es impar.
@@ -712,7 +732,7 @@ Esto es precisamente la forma de un número impar. Por lo tanto, el producto de 
 
 \newpage
 
-\section{Demostración de que $(-a)(-b) = ab$}
+\subsection{Demostración de que $(-a)(-b) = ab$}
 
 \begin{proposition}
 Para cualquier par de números reales $a$ y $b$, se cumple que:
@@ -759,7 +779,7 @@ Por lo tanto:
 
 \newpage
 
-\section{Demostración de la desigualdad de las medias (AM-GM) para dos números}
+\subsection{Demostración de la desigualdad de las medias (AM-GM) para dos números}
 
 \begin{proposition}
 Para cualesquiera números reales no negativos $x$ e $y$, se cumple que:
@@ -805,7 +825,7 @@ La igualdad se da cuando $(\sqrt{x} - \sqrt{y})^2 = 0$, lo que ocurre si y solo 
 
 \newpage
 
-\section{Demostración del teorema del binomio para exponente $2$}
+\subsection{Demostración del teorema del binomio para exponente $2$}
 
 \begin{proposition}
 Para cualesquiera números reales $a$ y $b$, se cumple que:
@@ -844,7 +864,7 @@ Sumamos los términos semejantes:
 
 \newpage
 
-\section{Demostración de que $\sqrt{ab} \leq \frac{a+b}{2}$ (equivalente a AM-GM)}
+\subsection{Demostración de que $\sqrt{ab} \leq \frac{a+b}{2}$ (equivalente a AM-GM)}
 
 \begin{proposition}
 Para $a, b \geq 0$:
@@ -893,7 +913,7 @@ La igualdad ocurre cuando $\sqrt{a} - \sqrt{b} = 0$, es decir, $a = b$.
 
 \newpage
 
-\section{Demostración de que $n^2 \geq n$ para todo entero $n \geq 1$}
+\subsection{Demostración de que $n^2 \geq n$ para todo entero $n \geq 1$}
 
 \begin{proposition}
 Para todo número entero $n \geq 1$, se cumple que:
@@ -940,7 +960,7 @@ Por el principio de inducción matemática, la proposición es válida para todo
 
 \newpage
 
-\section{Demostración de que $2^n > n$ para todo $n \in \mathbb{N}$}
+\subsection{Demostración de que $2^n > n$ para todo $n \in \mathbb{N}$}
 
 \begin{proposition}
 Para todo número natural $n$, se cumple que:
@@ -993,7 +1013,7 @@ Así, la desigualdad se cumple para todo $n \in \mathbb{N}$.
 
 \newpage
 
-\section{Demostración de que existen infinitos números primos}
+\subsection{Demostración de que existen infinitos números primos}
 
 \begin{proposition}
 Existen infinitos números primos.
@@ -1041,7 +1061,10 @@ En ambos casos obtenemos una contradicción.
 \newpage
 
 \chapter{Demostraciones algebraicas}
-\section{Demostración de la identidad $(a+b)^2 = a^2 + 2ab + b^2$}
+
+\section{Propiedades algebraicas}
+
+\subsection{Demostración de la identidad $(a+b)^2 = a^2 + 2ab + b^2$}
 
 \begin{proposition}
 Para cualesquiera números reales $a$ y $b$, se cumple que:
@@ -1106,7 +1129,7 @@ Por lo tanto:
 
 \newpage
 
-\section{Demostración de que $a^2-b^2=(a-b)(a+b)$}
+\subsection{Demostración de que $a^2-b^2=(a-b)(a+b)$}
 
 \begin{proposition}
 Para cualesquiera números reales $a$ y $b$, se cumple que:
@@ -1167,6 +1190,80 @@ Hemos demostrado que:
 
 \[
 a^2 - b^2 = (a-b)(a+b)
+\]
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de la fórmula cuadrática}
+
+\begin{proposition}
+Las soluciones de la ecuación cuadrática
+\[
+ax^2 + bx + c = 0, \quad a \neq 0
+\]
+están dadas por:
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+\]
+\end{proposition}
+
+
+\begin{proof}
+
+Partimos de la ecuación general:
+
+\[
+ax^2 + bx + c = 0
+\]
+
+Dividimos entre $a$:
+
+\[
+x^2 + \frac{b}{a}x + \frac{c}{a} = 0
+\]
+
+Pasamos el término constante al otro lado:
+
+\[
+x^2 + \frac{b}{a}x = -\frac{c}{a}
+\]
+
+Completamos el cuadrado. Tomamos la mitad del coeficiente de $x$ y la elevamos al cuadrado:
+
+\[
+\left(\frac{b}{2a}\right)^2 = \frac{b^2}{4a^2}
+\]
+
+Sumamos este término a ambos lados:
+
+\[
+x^2 + \frac{b}{a}x + \frac{b^2}{4a^2} = -\frac{c}{a} + \frac{b^2}{4a^2}
+\]
+
+El lado izquierdo es un cuadrado perfecto:
+
+\[
+\left(x + \frac{b}{2a}\right)^2 = \frac{b^2}{4a^2} - \frac{c}{a}
+\]
+
+Ponemos el lado derecho en común denominador:
+
+\[
+\left(x + \frac{b}{2a}\right)^2 = \frac{b^2 - 4ac}{4a^2}
+\]
+
+Sacamos raíz cuadrada:
+
+\[
+x + \frac{b}{2a} = \pm \frac{\sqrt{b^2 - 4ac}}{2a}
+\]
+
+Restamos $\frac{b}{2a}$:
+
+\[
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 \]
 
 \end{proof}
