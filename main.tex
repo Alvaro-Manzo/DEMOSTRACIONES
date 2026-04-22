@@ -133,7 +133,7 @@ Actualmente este documento se encuentra en código abierto en mi repositorio de 
 
 \end{center}
 
-Donde se encuentra el código de este archivo y el código de una plantilla de tesis con los logos de la Universidad Nacional Autónoma de México y de la Facultad de Ciencias.
+Donde se encuentra el código de este archivo existen demas codigos en LaTeX que podrian ser de interés para cualquier persona curiosa, le recomiendo estar al tanto del repositorio.
 
 Espero continuar contribuyendo a este proyecto compartiendo mis pequeños conocimientos y, en algún momento, poder compartirlo con todos, ayudando a las demás generaciones y tratando de hacer la matemática más accesible para quienes la consideran complicada o aburrida.
 
@@ -1267,6 +1267,57 @@ x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 \]
 
 \end{proof}
+\newpage
+
+\subsection{Demostración de $a^3 + b^3 = (a+b)(a^2 - ab + b^2)$}
+
+\begin{proposition}
+Para cualesquiera números reales $a$ y $b$, se cumple que:
+\[
+a^3 + b^3 = (a+b)(a^2 - ab + b^2)
+\]
+\end{proposition}
+
+\begin{proof}
+
+Partimos del lado derecho de la igualdad:
+
+\[
+(a+b)(a^2 - ab + b^2)
+\]
+
+Aplicamos la propiedad distributiva:
+
+\[
+= a(a^2 - ab + b^2) + b(a^2 - ab + b^2)
+\]
+
+Distribuimos en cada término:
+
+\[
+= (a^3 - a^2b + ab^2) + (a^2b - ab^2 + b^3)
+\]
+
+Agrupamos términos semejantes:
+
+\[
+= a^3 - a^2b + ab^2 + a^2b - ab^2 + b^3
+\]
+
+Simplificamos:
+
+\[
+-a^2b + a^2b = 0, \qquad ab^2 - ab^2 = 0
+\]
+
+Por lo tanto:
+
+\[
+(a+b)(a^2 - ab + b^2) = a^3 + b^3
+\]
+
+\end{proof}
+
 \newpage
 
 
