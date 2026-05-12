@@ -979,6 +979,106 @@ En ambos casos obtenemos una contradicción.
 
 \newpage
 
+
+\subsection{Demostración de que el producto de un número par por cualquier entero es par}
+
+\begin{proposition}
+Si $a$ es un número par y $b$ es un número entero, entonces $ab$ es par.
+\end{proposition}
+
+\begin{proof}
+
+Como $a$ es par, por definición existe un entero $k$ tal que:
+
+\[
+a = 2k
+\]
+
+Multiplicamos ambos lados por $b$:
+
+\[
+ab = (2k)b
+\]
+
+Usando la asociatividad y conmutatividad del producto, obtenemos:
+
+\[
+ab = 2(kb)
+\]
+
+Como $k$ y $b$ son enteros, su producto $kb$ también es un entero. Por lo tanto, $ab$ tiene la forma $2m$, donde $m = kb \in \mathbb{Z}$.
+
+Así, $ab$ es par.
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de que la suma de los primeros $n$ números impares es $n^2$}
+
+\begin{proposition}
+Para todo número natural $n$, se cumple que:
+\[
+1 + 3 + 5 + \cdots + (2n-1) = n^2
+\]
+\end{proposition}
+
+\begin{proof}
+
+Procedemos por inducción matemática.
+
+\textbf{Caso base:} Para $n=1$:
+
+\[
+1 = 1^2
+\]
+
+Por lo tanto, la proposición se cumple para $n=1$.
+
+\textbf{Paso inductivo:} Supongamos que para algún $k \in \mathbb{N}$ se cumple que:
+
+\[
+1 + 3 + 5 + \cdots + (2k-1) = k^2
+\]
+
+Queremos demostrar que también se cumple para $k+1$. El siguiente número impar después de $2k-1$ es:
+
+\[
+2(k+1)-1 = 2k+1
+\]
+
+Entonces:
+
+\[
+1 + 3 + 5 + \cdots + (2k-1) + (2k+1)
+\]
+
+Usando la hipótesis de inducción:
+
+\[
+= k^2 + 2k + 1
+\]
+
+Reconocemos el lado derecho como un cuadrado perfecto:
+
+\[
+k^2 + 2k + 1 = (k+1)^2
+\]
+
+Por lo tanto, la proposición se cumple para $k+1$.
+
+Por el principio de inducción matemática, se concluye que:
+
+\[
+1 + 3 + 5 + \cdots + (2n-1) = n^2
+\]
+
+para todo $n \in \mathbb{N}$.
+
+\end{proof}
+
+\newpage
+
 \chapter{Demostraciones algebraicas}
 
 \section{Propiedades algebraicas}
@@ -1420,6 +1520,86 @@ a^2 + b^2 = c^2
 \vspace{0.5em}
 
 \textbf{Asociatividad:} Propiedad que permite reagrupar sumas o productos sin cambiar el resultado. Por ejemplo, $(a+b)+c = a+(b+c)$ y $(ab)c = a(bc)$.
+\vspace{0.5em}
+
+\textbf{Variable:} Símbolo, generalmente una letra, que representa un número o una cantidad que puede cambiar. Por ejemplo, en la expresión $2x+1$, la letra $x$ es una variable.
+
+\vspace{0.5em}
+
+\textbf{Constante:} Valor que permanece fijo dentro de una expresión, ecuación o problema. Por ejemplo, en $3x+5$, el número $5$ es una constante.
+
+\vspace{0.5em}
+
+\textbf{Coeficiente:} Número que multiplica a una variable o a una expresión algebraica. En $7x$, el coeficiente de $x$ es $7$.
+
+\vspace{0.5em}
+
+\textbf{Términos semejantes:} Términos algebraicos que tienen la misma parte literal, es decir, las mismas variables elevadas a los mismos exponentes. Por ejemplo, $3x^2$ y $-5x^2$ son términos semejantes.
+
+\vspace{0.5em}
+
+\textbf{Potencia:} Expresión que representa una multiplicación repetida. Por ejemplo, $a^3$ significa $a \cdot a \cdot a$.
+
+\vspace{0.5em}
+
+\textbf{Exponente:} Número que indica cuántas veces se multiplica una base por sí misma. En $2^5$, el exponente es $5$.
+
+\vspace{0.5em}
+
+\textbf{Base:} Número o expresión que se repite en una potencia. En $x^4$, la base es $x$.
+
+\vspace{0.5em}
+
+\textbf{Raíz cuadrada:} Número no negativo que, al multiplicarse por sí mismo, produce el número dado. Por ejemplo, $\sqrt{9}=3$ porque $3^2=9$.
+
+\vspace{0.5em}
+
+\textbf{Desigualdad:} Relación matemática que compara dos cantidades mediante símbolos como $<$, $>$, $\leq$ o $\geq$.
+
+\vspace{0.5em}
+
+\textbf{Hipótesis:} Suposición o condición inicial que se acepta para desarrollar una demostración. En una proposición de la forma ``si $P$, entonces $Q$'', la hipótesis es $P$.
+
+\vspace{0.5em}
+
+\textbf{Conclusión:} Afirmación que se obtiene al final de un razonamiento o demostración. En una proposición de la forma ``si $P$, entonces $Q$'', la conclusión es $Q$.
+
+\vspace{0.5em}
+
+\textbf{Caso base:} Primer paso de una demostración por inducción matemática. Consiste en verificar que la proposición se cumple para el primer valor considerado.
+
+\vspace{0.5em}
+
+\textbf{Paso inductivo:} Parte de una demostración por inducción donde se prueba que, si la proposición se cumple para un valor $k$, entonces también se cumple para $k+1$.
+
+\vspace{0.5em}
+
+\textbf{Hipótesis de inducción:} Suposición temporal de que una proposición es verdadera para un valor $k$, usada para demostrar que también es verdadera para $k+1$.
+
+\vspace{0.5em}
+
+\textbf{Número compuesto:} Número natural mayor que $1$ que tiene más de dos divisores positivos. Por ejemplo, $4$, $6$, $8$ y $9$ son números compuestos.
+
+\vspace{0.5em}
+
+\textbf{Residuo:} Cantidad que sobra después de realizar una división entera. Por ejemplo, al dividir $17$ entre $5$, el residuo es $2$.
+
+\vspace{0.5em}
+
+\textbf{Módulo:} Forma de estudiar los residuos de una división. La expresión $a \equiv b \pmod{n}$ significa que $a$ y $b$ dejan el mismo residuo al dividirse entre $n$.
+
+\vspace{0.5em}
+
+\textbf{Fracción irreducible:} Fracción cuyo numerador y denominador no tienen divisores comunes distintos de $1$. Por ejemplo, $\frac{2}{3}$ es irreducible.
+
+\vspace{0.5em}
+
+\textbf{Valor absoluto:} Distancia de un número al cero en la recta numérica. Se denota por $|a|$ y siempre es mayor o igual que cero.
+
+\vspace{0.5em}
+
+\textbf{Recta numérica:} Representación geométrica de los números sobre una línea recta, donde cada punto corresponde a un número.
+
 
 % LICENCIA 
 
