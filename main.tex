@@ -1153,6 +1153,92 @@ Por lo tanto, $n^2$ es par.
 
 \newpage
 
+\subsection{Demostración de que si $n^2$ es par, entonces $n$ es par}
+
+\begin{proposition}
+Si $n$ es un número entero y $n^2$ es par, entonces $n$ es par.
+\end{proposition}
+
+\begin{proof}
+
+Procedemos por contraposición.
+
+La proposición contrapositiva dice: si $n$ no es par, entonces $n^2$ no es par. Es decir, si $n$ es impar, entonces $n^2$ es impar.
+
+Supongamos que $n$ es impar. Entonces existe un entero $k$ tal que:
+
+\[
+n = 2k+1
+\]
+
+Elevamos al cuadrado:
+
+\[
+n^2 = (2k+1)^2
+\]
+
+Desarrollamos:
+
+\[
+n^2 = 4k^2 + 4k + 1
+\]
+
+Factorizamos los primeros dos términos:
+
+\[
+n^2 = 2(2k^2+2k)+1
+\]
+
+Como $2k^2+2k$ es un entero, $n^2$ tiene la forma $2m+1$. Por lo tanto, $n^2$ es impar.
+
+Así, hemos demostrado que si $n$ es impar, entonces $n^2$ es impar. Por contraposición, si $n^2$ es par, entonces $n$ es par.
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de que la suma de un número par y un número impar es impar}
+
+\begin{proposition}
+La suma de un número par y un número impar es impar.
+\end{proposition}
+
+\begin{proof}
+
+Sea $a$ un número par y sea $b$ un número impar.
+
+Por definición, existen enteros $k$ y $m$ tales que:
+
+\[
+a = 2k, \qquad b = 2m+1
+\]
+
+Sumamos ambos números:
+
+\[
+a+b = 2k + (2m+1)
+\]
+
+Agrupamos términos semejantes:
+
+\[
+a+b = 2k + 2m + 1
+\]
+
+Factorizamos el $2$ en los dos primeros términos:
+
+\[
+a+b = 2(k+m)+1
+\]
+
+Como $k+m$ es un entero, $a+b$ tiene la forma $2q+1$, con $q \in \mathbb{Z}$.
+
+Por lo tanto, $a+b$ es impar.
+
+\end{proof}
+
+\newpage
+
 \chapter{Demostraciones algebraicas}
 
 \section{Propiedades algebraicas}
@@ -1414,6 +1500,124 @@ Por lo tanto:
 \newpage
 
 
+\subsection{Demostración de $a^2+2ab+b^2=(a+b)^2$}
+
+\begin{proposition}
+Para cualesquiera números reales $a$ y $b$, se cumple que:
+\[
+a^2+2ab+b^2=(a+b)^2
+\]
+\end{proposition}
+
+\begin{proof}
+
+Partimos del lado izquierdo:
+
+\[
+a^2+2ab+b^2
+\]
+
+Escribimos $2ab$ como $ab+ab$:
+
+\[
+a^2+2ab+b^2 = a^2+ab+ab+b^2
+\]
+
+Agrupamos los primeros dos términos y los últimos dos términos:
+
+\[
+a^2+ab+ab+b^2 = (a^2+ab)+(ab+b^2)
+\]
+
+Factorizamos $a$ en el primer paréntesis y $b$ en el segundo:
+
+\[
+(a^2+ab)+(ab+b^2)=a(a+b)+b(a+b)
+\]
+
+Ahora factorizamos el factor común $(a+b)$:
+
+\[
+a(a+b)+b(a+b)=(a+b)(a+b)
+\]
+
+Por definición de potencia:
+
+\[
+(a+b)(a+b)=(a+b)^2
+\]
+
+Por lo tanto:
+
+\[
+a^2+2ab+b^2=(a+b)^2
+\]
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de que $(a-b)^2=a^2-2ab+b^2$}
+
+\begin{proposition}
+Para cualesquiera números reales $a$ y $b$, se cumple que:
+\[
+(a-b)^2=a^2-2ab+b^2
+\]
+\end{proposition}
+
+\begin{proof}
+
+Por definición de potencia:
+
+\[
+(a-b)^2=(a-b)(a-b)
+\]
+
+Aplicamos la propiedad distributiva:
+
+\[
+(a-b)(a-b)=a(a-b)-b(a-b)
+\]
+
+Desarrollamos cada producto:
+
+\[
+a(a-b)=a^2-ab
+\]
+
+\[
+b(a-b)=ab-b^2
+\]
+
+Sustituimos:
+
+\[
+(a-b)(a-b)=a^2-ab-(ab-b^2)
+\]
+
+Distribuimos el signo negativo:
+
+\[
+a^2-ab-ab+b^2
+\]
+
+Agrupamos términos semejantes:
+
+\[
+a^2-2ab+b^2
+\]
+
+Por lo tanto:
+
+\[
+(a-b)^2=a^2-2ab+b^2
+\]
+
+\end{proof}
+
+\newpage
+
 \chapter{Demostraciones Geométricas}
 \section{Propiedades Geométricas}
 \subsection{Teorema de Pitágoras}
@@ -1600,12 +1804,50 @@ Esta ecuación indica que, para una masa fija, al aumentar la fuerza aumenta la 
 
 \end{proof}
 
+\newpage
+
+\subsection{Demostración de la fórmula del peso}
+
+\begin{proposition}
+El peso $P$ de un cuerpo de masa $m$ en un campo gravitatorio de aceleración $g$ está dado por:
+\[
+P = mg
+\]
+\end{proposition}
+
+\begin{proof}
+
+La segunda ley de Newton establece que la fuerza neta sobre un cuerpo se calcula mediante:
+\[
+F = ma
+\]
+
+El peso es la fuerza gravitatoria con la que un planeta atrae a un cuerpo.
+
+En la superficie terrestre, la aceleración producida por la gravedad se representa por $g$.
+
+Por lo tanto, en la fórmula $F=ma$ sustituimos la aceleración $a$ por la aceleración gravitatoria $g$:
+\[
+F = mg
+\]
+
+Como esta fuerza gravitatoria es precisamente el peso, escribimos:
+\[
+P = mg
+\]
+
+Así, el peso de un cuerpo depende de su masa y de la aceleración gravitatoria del lugar donde se encuentra.
+
+\end{proof}
+
 
 
 
 \newpage
 \chapter*{Glosario}
 \addcontentsline{toc}{chapter}{Glosario}
+
+\section*{Conceptos de aritmética y teoría de números}
 
 \textbf{Aritmética:} Rama de las matemáticas que estudia los números y las operaciones básicas entre ellos, como la suma, la resta, la multiplicación y la división. También analiza propiedades elementales de los números naturales, enteros, racionales y sus relaciones.
 
@@ -1794,6 +2036,28 @@ Esta ecuación indica que, para una masa fija, al aumentar la fuerza aumenta la 
 
 \vspace{0.5em}
 
+\textbf{Máximo común divisor:} Mayor número entero positivo que divide exactamente a dos o más números enteros. Se suele abreviar como MCD.
+
+\vspace{0.5em}
+
+\textbf{Mínimo común múltiplo:} Menor número entero positivo que es múltiplo común de dos o más números enteros. Se suele abreviar como MCM.
+
+\vspace{0.5em}
+
+\textbf{Coprimos:} Dos números enteros son coprimos si su máximo común divisor es $1$.
+
+\vspace{0.5em}
+
+\textbf{Paridad:} Propiedad de un número entero de ser par o impar.
+
+\vspace{0.5em}
+
+\textbf{Contraposición:} Método lógico que demuestra una proposición ``si $P$, entonces $Q$'' probando la proposición equivalente ``si no $Q$, entonces no $P$''.
+
+\section*{Conceptos de álgebra}
+
+\vspace{0.5em}
+
 \textbf{Valor absoluto:} Distancia de un número al cero en la recta numérica. Se denota por $|a|$ y siempre es mayor o igual que cero.
 
 \vspace{0.5em}
@@ -1842,6 +2106,32 @@ Esta ecuación indica que, para una masa fija, al aumentar la fuerza aumenta la 
 
 \vspace{0.5em}
 
+\textbf{Ecuación lineal:} Ecuación en la que la incógnita aparece elevada únicamente a la primera potencia. Por ejemplo, $2x+3=7$.
+
+\vspace{0.5em}
+
+\textbf{Ecuación cuadrática:} Ecuación que puede escribirse en la forma $ax^2+bx+c=0$, con $a \neq 0$.
+
+\vspace{0.5em}
+
+\textbf{Discriminante:} En una ecuación cuadrática, es la expresión $b^2-4ac$. Permite conocer la naturaleza de sus soluciones.
+
+\vspace{0.5em}
+
+\textbf{Incógnita:} Cantidad desconocida que se busca determinar al resolver una ecuación.
+
+\vspace{0.5em}
+
+\textbf{Simplificación:} Proceso de transformar una expresión en otra equivalente pero más sencilla.
+
+\vspace{0.5em}
+
+\textbf{Equivalencia:} Relación entre dos expresiones o proposiciones que tienen el mismo valor o significado matemático.
+
+\section*{Conceptos de funciones y geometría analítica}
+
+\vspace{0.5em}
+
 \textbf{Función:} Relación que asigna a cada elemento de un conjunto de entrada exactamente un elemento de un conjunto de salida.
 
 \vspace{0.5em}
@@ -1867,6 +2157,24 @@ Esta ecuación indica que, para una masa fija, al aumentar la fuerza aumenta la 
 \vspace{0.5em}
 
 \textbf{Intersección:} Punto en el que dos figuras, rectas o curvas se encuentran.
+
+\vspace{0.5em}
+
+\textbf{Eje $x$:} Recta horizontal del plano cartesiano.
+
+\vspace{0.5em}
+
+\textbf{Eje $y$:} Recta vertical del plano cartesiano.
+
+\vspace{0.5em}
+
+\textbf{Origen:} Punto de intersección entre el eje $x$ y el eje $y$ en el plano cartesiano. Se representa como $(0,0)$.
+
+\vspace{0.5em}
+
+\textbf{Ordenada al origen:} Punto donde una recta corta al eje $y$.
+
+\section*{Conceptos de conjuntos y lógica}
 
 \vspace{0.5em}
 
@@ -1914,6 +2222,24 @@ Esta ecuación indica que, para una masa fija, al aumentar la fuerza aumenta la 
 
 \vspace{0.5em}
 
+\textbf{Implicación:} Proposición lógica de la forma ``si $P$, entonces $Q$''. Indica que la verdad de $P$ conduce a la verdad de $Q$.
+
+\vspace{0.5em}
+
+\textbf{Bicondicional:} Proposición de la forma ``$P$ si y solo si $Q$''. Significa que $P$ implica $Q$ y $Q$ implica $P$.
+
+\vspace{0.5em}
+
+\textbf{Necesario:} Una condición necesaria es aquella que debe cumplirse para que una afirmación sea verdadera.
+
+\vspace{0.5em}
+
+\textbf{Suficiente:} Una condición suficiente es aquella que garantiza que una afirmación sea verdadera.
+
+\section*{Conceptos de geometría}
+
+\vspace{0.5em}
+
 \textbf{Base:} En geometría, lado de una figura que se toma como referencia para calcular áreas o alturas. En un triángulo, cualquier lado puede elegirse como base.
 
 \vspace{0.5em}
@@ -1951,6 +2277,28 @@ Esta ecuación indica que, para una masa fija, al aumentar la fuerza aumenta la 
 \vspace{0.5em}
 
 \textbf{Polígono:} Figura plana cerrada formada por segmentos de recta.
+
+\vspace{0.5em}
+
+\textbf{Circunferencia:} Conjunto de puntos del plano que están a la misma distancia de un punto fijo llamado centro.
+
+\vspace{0.5em}
+
+\textbf{Círculo:} Región del plano limitada por una circunferencia.
+
+\vspace{0.5em}
+
+\textbf{Radio:} Segmento que une el centro de una circunferencia con cualquiera de sus puntos.
+
+\vspace{0.5em}
+
+\textbf{Diámetro:} Segmento que une dos puntos de una circunferencia pasando por su centro. Su longitud es el doble del radio.
+
+\vspace{0.5em}
+
+\textbf{Perímetro:} Longitud total del contorno de una figura plana.
+
+\section*{Conceptos de física}
 
 \vspace{0.5em}
 
@@ -2035,6 +2383,38 @@ Esta ecuación indica que, para una masa fija, al aumentar la fuerza aumenta la 
 \vspace{0.5em}
 
 \textbf{Sistema Internacional de Unidades:} Sistema de unidades usado internacionalmente para expresar mediciones físicas de forma estandarizada.
+
+\vspace{0.5em}
+
+\textbf{Desplazamiento:} Cambio de posición de un objeto, considerando dirección y sentido.
+
+\vspace{0.5em}
+
+\textbf{Magnitud escalar:} Magnitud física que se describe solo con un número y una unidad, como la masa o el tiempo.
+
+\vspace{0.5em}
+
+\textbf{Magnitud vectorial:} Magnitud física que requiere número, unidad, dirección y sentido, como la fuerza o la velocidad.
+
+\vspace{0.5em}
+
+\textbf{Campo gravitatorio:} Región del espacio donde un cuerpo con masa experimenta una fuerza gravitatoria.
+
+\vspace{0.5em}
+
+\textbf{Aceleración gravitatoria:} Aceleración producida por la gravedad. Cerca de la superficie terrestre suele aproximarse por $9.8\,\mathrm{m/s^2}$.
+
+\vspace{0.5em}
+
+\textbf{Cantidad de movimiento:} Magnitud física definida como el producto de la masa por la velocidad de un cuerpo.
+
+\vspace{0.5em}
+
+\textbf{Inercia:} Tendencia de un cuerpo a conservar su estado de reposo o movimiento rectilíneo uniforme.
+
+\vspace{0.5em}
+
+\textbf{Potencia:} En física, rapidez con la que se realiza trabajo o se transfiere energía.
 
 
 % LICENCIA 
