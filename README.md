@@ -124,7 +124,8 @@ Please feel free to:
 ## License
 
 This work is licensed under the  
-**Creative Commons Attribution 4.0 International (CC BY 4.0)**  
+**Creative Commons Attribution 4.0 International (CC BY 4.0)**
+Please check it and do the same with [CONTRIBUTING](CONTRIBUTING.md) if you are interested to make an edit. :p  
 See [LICENSE](LICENSE) for details.
 
 ---
