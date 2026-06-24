@@ -115,6 +115,12 @@
 \pagenumbering{arabic}
 \hypersetup{pageanchor=true}
 
+\newpage
+
+\textit{``Comprender es percibir patrones.''}
+
+\textsc{Isaiah Berlin}
+
 
 % PROLOGO 
 
@@ -1910,6 +1916,449 @@ a^3-b^3=(a-b)(a^2+ab+b^2)
 
 \newpage
 
+
+\subsection{Demostración de la suma de una progresión geométrica finita}
+
+\begin{proposition}
+Si $r \neq 1$, entonces para todo número natural $n$ se cumple que:
+\[
+1+r+r^2+\cdots+r^n=\frac{r^{n+1}-1}{r-1}
+\]
+\end{proposition}
+
+\begin{proof}
+
+Sea
+
+\[
+S=1+r+r^2+\cdots+r^n
+\]
+
+Multiplicamos ambos lados por $r$:
+
+\[
+rS=r+r^2+r^3+\cdots+r^{n+1}
+\]
+
+Ahora restamos la primera igualdad de la segunda:
+
+\[
+rS-S=(r+r^2+\cdots+r^{n+1})-(1+r+r^2+\cdots+r^n)
+\]
+
+Todos los términos intermedios se cancelan, por lo que queda:
+
+\[
+rS-S=r^{n+1}-1
+\]
+
+Factorizamos $S$ en el lado izquierdo:
+
+\[
+S(r-1)=r^{n+1}-1
+\]
+
+Como $r\neq 1$, podemos dividir entre $r-1$:
+
+\[
+S=\frac{r^{n+1}-1}{r-1}
+\]
+
+Por lo tanto:
+
+\[
+1+r+r^2+\cdots+r^n=\frac{r^{n+1}-1}{r-1}
+\]
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de la fórmula para la suma de una progresión aritmética}
+
+\begin{proposition}
+Si una progresión aritmética tiene primer término $a_1$, último término $a_n$ y $n$ términos, entonces su suma es:
+\[
+S_n=\frac{n(a_1+a_n)}{2}
+\]
+\end{proposition}
+
+\begin{proof}
+
+Escribimos la suma en orden normal:
+
+\[
+S_n=a_1+a_2+a_3+\cdots+a_{n-1}+a_n
+\]
+
+Ahora escribimos la misma suma en orden inverso:
+
+\[
+S_n=a_n+a_{n-1}+a_{n-2}+\cdots+a_2+a_1
+\]
+
+Sumamos ambas igualdades término a término:
+
+\[
+2S_n=(a_1+a_n)+(a_2+a_{n-1})+\cdots+(a_n+a_1)
+\]
+
+En una progresión aritmética, cada pareja simétrica tiene la misma suma:
+
+\[
+a_1+a_n=a_2+a_{n-1}=a_3+a_{n-2}=\cdots
+\]
+
+Como aparecen $n$ parejas, obtenemos:
+
+\[
+2S_n=n(a_1+a_n)
+\]
+
+Dividimos entre $2$:
+
+\[
+S_n=\frac{n(a_1+a_n)}{2}
+\]
+
+Así queda demostrada la fórmula.
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de que si un número es divisible por $6$, entonces es divisible por $2$ y por $3$}
+
+\begin{proposition}
+Si un entero $n$ es divisible por $6$, entonces $n$ es divisible por $2$ y por $3$.
+\end{proposition}
+
+\begin{proof}
+
+Supongamos que $n$ es divisible por $6$.
+
+Por definición de divisibilidad, existe un entero $k$ tal que:
+
+\[
+n=6k
+\]
+
+Como $6=2\cdot 3$, podemos escribir:
+
+\[
+n=2(3k)
+\]
+
+Dado que $3k$ es un entero, esto muestra que $n$ es divisible por $2$.
+
+También podemos escribir:
+
+\[
+n=3(2k)
+\]
+
+Como $2k$ es un entero, esto muestra que $n$ es divisible por $3$.
+
+Por lo tanto, si $n$ es divisible por $6$, entonces $n$ es divisible por $2$ y por $3$.
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de que si un entero es múltiplo de $4$, entonces su cuadrado es múltiplo de $16$}
+
+\begin{proposition}
+Si $n$ es un entero múltiplo de $4$, entonces $n^2$ es múltiplo de $16$.
+\end{proposition}
+
+\begin{proof}
+
+Como $n$ es múltiplo de $4$, existe un entero $k$ tal que:
+
+\[
+n=4k
+\]
+
+Elevamos ambos lados al cuadrado:
+
+\[
+n^2=(4k)^2
+\]
+
+Desarrollamos el cuadrado:
+
+\[
+n^2=16k^2
+\]
+
+Como $k$ es entero, entonces $k^2$ también es entero.
+
+Por lo tanto, $n^2$ tiene la forma $16m$, con $m=k^2\in\mathbb{Z}$.
+
+Así, $n^2$ es múltiplo de $16$.
+
+\end{proof}
+
+\subsection{Demostración de que la media aritmética de dos números está entre ellos}
+
+\begin{proposition}
+Si $a\leq b$, entonces:
+\[
+a\leq \frac{a+b}{2}\leq b
+\]
+\end{proposition}
+
+\begin{proof}
+
+Como $a\leq b$, al sumar $a$ en ambos lados obtenemos:
+
+\[
+2a\leq a+b
+\]
+
+Dividimos entre $2$, que es positivo, y por tanto no cambia el sentido de la desigualdad:
+
+\[
+a\leq \frac{a+b}{2}
+\]
+
+Ahora, de nuevo usando $a\leq b$, sumamos $b$ en ambos lados:
+
+\[
+a+b\leq 2b
+\]
+
+Dividimos entre $2$:
+
+\[
+\frac{a+b}{2}\leq b
+\]
+
+Juntando ambas desigualdades, concluimos que:
+
+\[
+a\leq \frac{a+b}{2}\leq b
+\]
+
+Esto muestra que la media aritmética de dos números se encuentra entre ellos.
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de la desigualdad triangular en la recta real}
+
+\begin{proposition}
+Para cualesquiera números reales $a$ y $b$, se cumple que:
+\[
+|a+b|\leq |a|+|b|
+\]
+\end{proposition}
+
+\begin{proof}
+
+Sabemos que para todo número real $x$ se cumple:
+
+\[
+-|x|\leq x\leq |x|
+\]
+
+Aplicando esto a $a$ y a $b$, obtenemos:
+
+\[
+-|a|\leq a\leq |a|
+\]
+
+y
+
+\[
+-|b|\leq b\leq |b|
+\]
+
+Sumamos ambas desigualdades:
+
+\[
+-(|a|+|b|)\leq a+b\leq |a|+|b|
+\]
+
+Esto significa que $a+b$ está entre $-(|a|+|b|)$ y $|a|+|b|$.
+
+Por definición de valor absoluto, se concluye que:
+
+\[
+|a+b|\leq |a|+|b|
+\]
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de que entre dos números reales distintos existe otro número real}
+
+\begin{proposition}
+Si $a$ y $b$ son números reales con $a<b$, entonces existe un número real $c$ tal que:
+\[
+a<c<b
+\]
+\end{proposition}
+
+\begin{proof}
+
+Definimos:
+
+\[
+c=\frac{a+b}{2}
+\]
+
+Como $a<b$, al sumar $a$ en ambos lados obtenemos:
+
+\[
+2a<a+b
+\]
+
+Dividiendo entre $2$:
+
+\[
+a<\frac{a+b}{2}
+\]
+
+Por lo tanto:
+
+\[
+a<c
+\]
+
+Ahora, como $a<b$, al sumar $b$ en ambos lados obtenemos:
+
+\[
+a+b<2b
+\]
+
+Dividiendo entre $2$:
+
+\[
+\frac{a+b}{2}<b
+\]
+
+Por lo tanto:
+
+\[
+c<b
+\]
+
+Juntando ambas desigualdades:
+
+\[
+a<c<b
+\]
+
+Así, entre dos números reales distintos siempre existe otro número real.
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de que $\sqrt{5}$ es irracional}
+
+\begin{proposition}
+El número $\sqrt{5}$ es irracional.
+\end{proposition}
+
+\begin{proof}
+
+Procedemos por contradicción.
+
+Supongamos que $\sqrt{5}$ es racional. Entonces existen enteros $a$ y $b$, con $b\neq 0$, sin factores comunes y tales que:
+
+\[
+\sqrt{5}=\frac{a}{b}
+\]
+
+Elevamos al cuadrado ambos lados:
+
+\[
+5=\frac{a^2}{b^2}
+\]
+
+Multiplicamos por $b^2$:
+
+\[
+5b^2=a^2
+\]
+
+Esto implica que $a^2$ es múltiplo de $5$. Por lo tanto, $a$ también es múltiplo de $5$.
+
+Entonces existe un entero $k$ tal que:
+
+\[
+a=5k
+\]
+
+Sustituimos en $5b^2=a^2$:
+
+\[
+5b^2=(5k)^2=25k^2
+\]
+
+Dividimos entre $5$:
+
+\[
+b^2=5k^2
+\]
+
+Esto implica que $b^2$ es múltiplo de $5$, y por lo tanto $b$ también es múltiplo de $5$.
+
+Así, $a$ y $b$ tienen un factor común, lo cual contradice que la fracción $\frac{a}{b}$ estaba en forma irreducible.
+
+Por lo tanto, $\sqrt{5}$ es irracional.
+
+\end{proof}
+
+\newpage
+
+\subsection{Demostración de que $a^2+b^2\geq 2ab$}
+
+\begin{proposition}
+Para cualesquiera números reales $a$ y $b$, se cumple que:
+\[
+a^2+b^2\geq 2ab
+\]
+\end{proposition}
+
+\begin{proof}
+
+Para todo número real, su cuadrado es mayor o igual que cero. En particular:
+
+\[
+(a-b)^2\geq 0
+\]
+
+Desarrollamos el cuadrado:
+
+\[
+a^2-2ab+b^2\geq 0
+\]
+
+Sumamos $2ab$ a ambos lados:
+
+\[
+a^2+b^2\geq 2ab
+\]
+
+Por lo tanto, para cualesquiera números reales $a$ y $b$, se cumple la desigualdad.
+
+La igualdad ocurre cuando:
+
+\[
+(a-b)^2=0
+\]
+
+es decir, cuando $a=b$.
+
+\end{proof}
+
+\newpage
+
 \chapter{Demostraciones Geométricas}
 \section{Propiedades Geométricas}
 \subsection{Teorema de Pitágoras}
@@ -2707,6 +3156,99 @@ Así, el peso de un cuerpo depende de su masa y de la aceleración gravitatoria 
 \vspace{0.5em}
 
 \textbf{Potencia:} En física, rapidez con la que se realiza trabajo o se transfiere energía.
+
+\vspace{0.5em}
+
+\textbf{Progresión aritmética:} Sucesión de números en la que la diferencia entre dos términos consecutivos es constante.
+
+\vspace{0.5em}
+
+\textbf{Progresión geométrica:} Sucesión de números en la que cada término se obtiene multiplicando el anterior por una constante llamada razón.
+
+\vspace{0.5em}
+
+\textbf{Razón común:} En una progresión geométrica, número fijo por el que se multiplica cada término para obtener el siguiente.
+
+\vspace{0.5em}
+
+\textbf{Términos simétricos:} En una suma ordenada, términos que ocupan posiciones opuestas respecto al inicio y al final; por ejemplo, el primero y el último.
+
+\vspace{0.5em}
+
+\textbf{Divisibilidad:} Propiedad que indica que un número puede escribirse como producto de otro número por un entero.
+
+\vspace{0.5em}
+
+\textbf{Múltiplo:} Número que se obtiene al multiplicar un entero por otro entero fijo.
+
+\vspace{0.5em}
+
+\textbf{Factor común:} Número que divide exactamente a dos o más cantidades.
+
+\vspace{0.5em}
+
+\textbf{Fracción irreducible:} Fracción cuyo numerador y denominador no tienen factores comunes distintos de $1$ y $-1$.
+
+\vspace{0.5em}
+
+\textbf{Valor absoluto:} Distancia de un número real al cero en la recta numérica. Siempre es mayor o igual que cero.
+
+\vspace{0.5em}
+
+\textbf{Desigualdad triangular:} Propiedad que afirma que el valor absoluto de una suma no supera la suma de los valores absolutos.
+
+\vspace{0.5em}
+
+\textbf{Media aritmética:} Promedio de dos o más números. Para dos números $a$ y $b$, se calcula como $\frac{a+b}{2}$.
+
+\vspace{0.5em}
+
+\textbf{Densidad de los reales:} Propiedad que establece que entre dos números reales distintos siempre existe otro número real.
+
+\vspace{0.5em}
+
+\textbf{Términos semejantes:} Expresiones algebraicas que tienen la misma parte literal y que pueden sumarse o restarse directamente.
+
+\vspace{0.5em}
+
+\textbf{Cancelación:} Proceso algebraico en el que términos opuestos o iguales se eliminan al operar una expresión.
+
+\vspace{0.5em}
+
+\textbf{Cuadrado no negativo:} Propiedad de los números reales según la cual $x^2\geq 0$ para todo número real $x$.
+
+\vspace{0.5em}
+
+\textbf{Igualdad de caso extremo:} Situación en la que una desigualdad se vuelve igualdad; por ejemplo, en $a^2+b^2\geq 2ab$ ocurre cuando $a=b$.
+
+\vspace{0.5em}
+
+\textbf{Demostración directa:} Método de demostración que parte de las hipótesis y, mediante pasos lógicos, llega a la conclusión.
+
+\vspace{0.5em}
+
+\textbf{Demostración por contradicción:} Método que supone falsa la conclusión y muestra que esa suposición lleva a una contradicción.
+
+\vspace{0.5em}
+
+\textbf{Hipótesis:} Condición inicial que se asume verdadera al comenzar una demostración.
+
+\vspace{0.5em}
+
+\textbf{Conclusión:} Afirmación final que se desea demostrar a partir de las hipótesis.
+
+\vspace{0.5em}
+
+\textbf{Recta real:} Representación geométrica de los números reales mediante una línea en la que cada punto corresponde a un número.
+
+\vspace{0.5em}
+
+\textbf{Orden en los reales:} Relación que permite comparar números reales mediante símbolos como $<$, $>$, $\leq$ y $\geq$.
+
+\vspace{0.5em}
+
+\textbf{Conservación del sentido de una desigualdad:} Propiedad que indica que al multiplicar o dividir una desigualdad por un número positivo, el signo no cambia.
+
 
 
 % LICENCIA 
